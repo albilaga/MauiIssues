@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="MauiIssues.MainPage"
+    x:Class="MauiIssues.BorderShadowIssuePage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
@@ -36,8 +36,8 @@
             StrokeShape="{RoundRectangle CornerRadius=20}">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Offset="0" Color="#a683eb" />
-                    <GradientStop Offset="1.0" Color="#ac70d4" />
+                    <GradientStop Offset="0" Color="{StaticResource PrimaryDark}" />
+                    <GradientStop Offset="1.0" Color="{StaticResource Secondary}" />
                 </LinearGradientBrush>
             </Border.Background>
             <Label
@@ -48,7 +48,7 @@
                 VerticalOptions="Center" />
             <Border.Shadow>
                 <Shadow
-                    Brush="#611dea"
+                    Brush="{StaticResource PrimaryBrush}"
                     Opacity="0.3"
                     Radius="6"
                     Offset="0, 3" />
@@ -61,13 +61,13 @@
             StrokeShape="{RoundRectangle CornerRadius=20}">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Offset="0" Color="#611dea" />
-                    <GradientStop Offset="1.0" Color="#860FD4" />
+                    <GradientStop Offset="0" Color="{StaticResource Primary}" />
+                    <GradientStop Offset="1.0" Color="{StaticResource Secondary}" />
                 </LinearGradientBrush>
             </Border.Background>
             <Border.Shadow>
                 <Shadow
-                    Brush="#611dea"
+                    Brush="{StaticResource PrimaryBrush}"
                     Opacity="0.3"
                     Radius="6"
                     Offset="0, 3" />

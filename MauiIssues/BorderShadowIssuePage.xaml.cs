@@ -1,10 +1,10 @@
 ﻿namespace MauiIssues;
 
-public partial class MainPage : ContentPage
+public partial class BorderShadowIssuePage : ContentPage
 {
     int count = 0;
 
-    public MainPage()
+    public BorderShadowIssuePage()
     {
         InitializeComponent();
     }
