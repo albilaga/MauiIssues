@@ -9,6 +9,12 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            .ConfigureMauiHandlers(handlers =>
+            {
+#if IOS
+                handlers.AddHandler<Border, NotAnimatedBorderHandler>();
+#endif
+            })
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
