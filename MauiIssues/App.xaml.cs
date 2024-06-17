@@ -6,6 +6,6 @@ public partial class App : Application
     {
         InitializeComponent();
 
-        MainPage = new BorderShadowIssuePage();
+        MainPage = new NavigationPage(new MainPage());
     }
 }

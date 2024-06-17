@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiIssues.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout Padding="8" Spacing="8">
+            <Label Text="BorderShadowIssuePage">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBorderShadowIssuePageTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="DynamicMarginPage">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDynamicMarginPageTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="MarginPage">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMarginPageTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
