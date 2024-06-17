@@ -24,7 +24,6 @@ namespace MauiIssues
         protected override void OnSizeAllocated(double width, double height)
         {
             base.OnSizeAllocated(width, height);
-            base.OnSizeAllocated(width, height);
             if (height < 1 || width < 1 || Math.Abs(width - _previousWidth) < 1 ||
                 Math.Abs(height - _previousHeight) < 1)
             {
