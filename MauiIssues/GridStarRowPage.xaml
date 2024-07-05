@@ -6,15 +6,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Grid>
         <Grid
+            x:Name="ContainerGrid"
             RowDefinitions="Auto,*,Auto"
             RowSpacing="20"
             VerticalOptions="End">
             <Label
+                x:Name="TitleLabel"
                 FontAttributes="Bold"
                 FontSize="Title"
                 HorizontalTextAlignment="Center"
                 Text="Title" />
-            <ScrollView Grid.Row="1">
+            <ScrollView x:Name="ScrollViewContent" Grid.Row="1">
                 <VerticalStackLayout Spacing="8">
                     <Image
                         HeightRequest="180"
@@ -34,6 +36,7 @@
                 </VerticalStackLayout>
             </ScrollView>
             <Button
+                x:Name="ContinueButton"
                 Grid.Row="2"
                 HorizontalOptions="Center"
                 Text="Hello" />
