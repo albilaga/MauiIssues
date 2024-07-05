@@ -1,5 +1,6 @@
 namespace MauiIssues
 {
+    //https://github.com/dotnet/maui/issues/23445
     public partial class GridStarRowPage : ContentPage
     {
         private double _previousWidth, _previousHeight;
@@ -17,7 +18,7 @@ namespace MauiIssues
         {
             base.OnSizeAllocated(width, height);
             if (width < 1 || height < 1 || Math.Abs(width - _previousWidth) < 1 ||
-                Math.Abs(height - _previousWidth) < 1) return;
+                Math.Abs(height - _previousHeight) < 1) return;
             _previousHeight = height;
             _previousWidth = width;
             // Workaround(height);
