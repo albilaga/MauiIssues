@@ -5,26 +5,26 @@ namespace MauiIssues
         public MainPage()
         {
             InitializeComponent();
+            Container.Add(CreateLabel(new BorderShadowIssuePage()));
+            Container.Add(CreateLabel(new DynamicMarginPage()));
+            Container.Add(CreateLabel(new MarginPage()));
+            Container.Add(CreateLabel(new GridStarRowPage()));
+            Container.Add(CreateLabel(new OutOfScreenLabel()));
         }
 
-        private void OnBorderShadowIssuePageTapped(object? sender, TappedEventArgs e)
+        private Label CreateLabel(ContentPage page)
         {
-            Navigation.PushAsync(new BorderShadowIssuePage(), false);
-        }
-
-        private void OnDynamicMarginPageTapped(object? sender, TappedEventArgs e)
-        {
-            Navigation.PushAsync(new DynamicMarginPage(), false);
-        }
-
-        private void OnMarginPageTapped(object? sender, TappedEventArgs e)
-        {
-            Navigation.PushAsync(new MarginPage(), false);
-        }
-
-        private void OnGridStarRowPageTapped(object? sender, TappedEventArgs e)
-        {
-            Navigation.PushAsync(new GridStarRowPage());
+            return new Label
+            {
+                Text = page.GetType().Name,
+                GestureRecognizers =
+                {
+                    new TapGestureRecognizer
+                    {
+                        Command = new Command(() => Navigation.PushAsync(page))
+                    }
+                }
+            };
         }
     }
 }

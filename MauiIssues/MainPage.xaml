@@ -11,27 +11,9 @@
         </Style>
     </ContentPage.Resources>
     <ScrollView>
-        <VerticalStackLayout Padding="8" Spacing="8">
-            <Label Text="BorderShadowIssuePage">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnBorderShadowIssuePageTapped" />
-                </Label.GestureRecognizers>
-            </Label>
-            <Label Text="DynamicMarginPage">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnDynamicMarginPageTapped" />
-                </Label.GestureRecognizers>
-            </Label>
-            <Label Text="MarginPage">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnMarginPageTapped" />
-                </Label.GestureRecognizers>
-            </Label>
-            <Label Text="GridStarRowPage">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnGridStarRowPageTapped" />
-                </Label.GestureRecognizers>
-            </Label>
-        </VerticalStackLayout>
+        <VerticalStackLayout
+            x:Name="Container"
+            Padding="8"
+            Spacing="8" />
     </ScrollView>
 </ContentPage>
