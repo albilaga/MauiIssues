@@ -27,6 +27,11 @@
                     <TapGestureRecognizer Tapped="OnMarginPageTapped" />
                 </Label.GestureRecognizers>
             </Label>
+            <Label Text="GridStarRowPage">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGridStarRowPageTapped" />
+                </Label.GestureRecognizers>
+            </Label>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

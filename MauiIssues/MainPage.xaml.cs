@@ -21,5 +21,10 @@ namespace MauiIssues
         {
             Navigation.PushAsync(new MarginPage(), false);
         }
+
+        private void OnGridStarRowPageTapped(object? sender, TappedEventArgs e)
+        {
+            Navigation.PushAsync(new GridStarRowPage());
+        }
     }
 }
