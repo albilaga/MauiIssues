@@ -37,5 +37,14 @@
                 VerticalTextAlignment="Center" />
             <Button Grid.Column="1" Text="Edit" />
         </Grid>
+
+        <Grid ColumnDefinitions="Auto,*">
+            <Label
+                LineBreakMode="TailTruncation"
+                MaxLines="2"
+                Text="5. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel sapien ut odio sollicitudin iaculis vel ut tortor. Proin mauris magna, tincidunt a congue vitae, pellentesque ac ligula."
+                VerticalTextAlignment="Center" />
+            <Button Grid.Column="1" Text="Edit" />
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>
