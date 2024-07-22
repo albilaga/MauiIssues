@@ -1,5 +1,6 @@
 namespace MauiIssues
 {
+    // https://github.com/dotnet/maui/issues/23755
     public partial class GridBackground : ContentPage
     {
         public GridBackground()
