@@ -10,6 +10,7 @@ namespace MauiIssues
             Container.Add(CreateLabel(new MarginPage()));
             Container.Add(CreateLabel(new GridStarRowPage()));
             Container.Add(CreateLabel(new OutOfScreenLabel()));
+            Container.Add(CreateLabel(new GridBackground()));
         }
 
         private Label CreateLabel(ContentPage page)

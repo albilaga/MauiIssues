@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiIssues.GridBackground"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid BackgroundColor="White">
+        <AbsoluteLayout HeightRequest="200" VerticalOptions="Start">
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,200"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                Source="https://picsum.photos/500/200" />
+            <!--  <Border  -->
+            <!--  AbsoluteLayout.LayoutBounds="0,112,1,88"  -->
+            <!--  AbsoluteLayout.LayoutFlags="WidthProportional"  -->
+            <!--  HeightRequest="88"  -->
+            <!--  StrokeThickness="0">  -->
+            <!--     <Border.Background> -->
+            <!--         <LinearGradientBrush> -->
+            <!--             <GradientStop Color="Transparent" /> -->
+            <!--             <GradientStop Offset="1" Color=" Black" /> -->
+            <!--         </LinearGradientBrush> -->
+            <!--     </Border.Background> -->
+            <!--     <Label FontSize="Large" Text="Hello" /> -->
+            <!-- </Border> -->
+            <Grid
+                AbsoluteLayout.LayoutBounds="0,112,1,88"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                HeightRequest="88">
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Transparent" />
+                        <GradientStop Offset="1" Color=" Black" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Label FontSize="Large" Text="Hello" />
+            </Grid>
+        </AbsoluteLayout>
+        <Grid
+            x:Name="Popup"
+            BackgroundColor="White"
+            RowDefinitions="*,Auto"
+            VerticalOptions="Fill">
+            <BoxView BackgroundColor="White">
+                <BoxView.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BoxViewTapped" />
+                </BoxView.GestureRecognizers>
+            </BoxView>
+            <VerticalStackLayout
+                Grid.Row="1"
+                Padding="20"
+                Spacing="8">
+                <Label
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalTextAlignment="Center"
+                    Text="This is popup" />
+                <Button Clicked="Button_OnClicked" Text="Dismiss" />
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
