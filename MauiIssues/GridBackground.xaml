@@ -10,31 +10,31 @@
                 AbsoluteLayout.LayoutBounds="0,0,1,200"
                 AbsoluteLayout.LayoutFlags="WidthProportional"
                 Source="https://picsum.photos/500/200" />
-            <Border
-                AbsoluteLayout.LayoutBounds="0,112,1,88"
-                AbsoluteLayout.LayoutFlags="WidthProportional"
-                HeightRequest="88"
-                StrokeThickness="0">
-                <Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="Transparent" />
-                        <GradientStop Offset="1" Color=" Black" />
-                    </LinearGradientBrush>
-                </Border.Background>
-                <Label FontSize="Large" Text="Hello" />
-            </Border>
-            <!--  <Grid  -->
+            <!--  <Border  -->
             <!--  AbsoluteLayout.LayoutBounds="0,112,1,88"  -->
             <!--  AbsoluteLayout.LayoutFlags="WidthProportional"  -->
-            <!--  HeightRequest="88">  -->
-            <!--     <Grid.Background> -->
+            <!--  HeightRequest="88"  -->
+            <!--  StrokeThickness="0">  -->
+            <!--     <Border.Background> -->
             <!--         <LinearGradientBrush> -->
             <!--             <GradientStop Color="Transparent" /> -->
             <!--             <GradientStop Offset="1" Color=" Black" /> -->
             <!--         </LinearGradientBrush> -->
-            <!--     </Grid.Background> -->
+            <!--     </Border.Background> -->
             <!--     <Label FontSize="Large" Text="Hello" /> -->
-            <!-- </Grid> -->
+            <!-- </Border> -->
+            <Grid
+                AbsoluteLayout.LayoutBounds="0,112,1,88"
+                AbsoluteLayout.LayoutFlags="WidthProportional"
+                HeightRequest="88">
+                <Grid.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Transparent" />
+                        <GradientStop Offset="1" Color=" Black" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Label FontSize="Large" Text="Hello" />
+            </Grid>
         </AbsoluteLayout>
         <Grid
             x:Name="Popup"
