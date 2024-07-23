@@ -1,5 +1,6 @@
 namespace MauiIssues
 {
+    // https://github.com/dotnet/maui/issues/23773
     public partial class ScrollViewWidth : ContentPage
     {
         private double _previousWidth, _previousHeight;
