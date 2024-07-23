@@ -11,6 +11,7 @@ namespace MauiIssues
             Container.Add(CreateLabel(new GridStarRowPage()));
             Container.Add(CreateLabel(new OutOfScreenLabel()));
             Container.Add(CreateLabel(new GridBackground()));
+            Container.Add(CreateLabel(new ScrollViewWidth()));
         }
 
         private Label CreateLabel(ContentPage page)

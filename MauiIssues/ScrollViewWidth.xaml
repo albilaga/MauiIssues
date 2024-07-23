@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="MauiIssues.ScrollViewWidth"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid>
+        <ScrollView x:Name="ScrollView" Orientation="Vertical">
+            <VerticalStackLayout Spacing="8">
+                <Image Source="https://picsum.photos/500/200" />
+                <Label Margin="8,0" Text="The old oak tree stood sentinel at the edge of the meadow, its gnarled branches reaching toward the sky. Generations of children had climbed its sturdy limbs, carving initials and dreams into its weathered bark. As the sun dipped below the horizon, casting long shadows across the grass, the tree whispered ancient secrets to the evening breeze." />
+            </VerticalStackLayout>
+        </ScrollView>
+        <ContentView
+            BackgroundColor="LightGray"
+            HeightRequest="30"
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            WidthRequest="30">
+            <ContentView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_OnTapped" />
+            </ContentView.GestureRecognizers>
+            <ContentView.Clip>
+                <EllipseGeometry
+                    Center="15,15"
+                    RadiusX="15"
+                    RadiusY="15" />
+            </ContentView.Clip>
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="x"
+                VerticalOptions="Center" />
+        </ContentView>
+    </Grid>
+</ContentPage>
